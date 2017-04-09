@@ -1,2 +1,1 @@
-# fitness-club-form
-Exploration of HTML5 form elements
+Exploring the more prominent HTML5 form elements
