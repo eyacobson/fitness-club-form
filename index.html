@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Evgeni">
+		<meta name="description" content="Courts Reservation Page">
+
+		<title>24-7 Fitness Club</title>
+
+		<link rel="stylesheet" type="text/css" href="form_styles.css">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Hind">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Gruppo">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oxygen+Mono">
+	</head>
+
+	<body>
+		<header>
+			Welcome to the 24-7 Fitness Club <br/> Courts Reservation Page
+		</header>
+
+		<section>
+			<form>
+				<fieldset>
+					<legend>Member Demographics</legend>
+					<div class="row">
+						<label for="name">Player name</label>
+						<input type="text" id="name" name="name" pattern="\S+\s{1}\S+" required>
+					</div>
+
+					<div class="row">
+						<p>Are you a member?</p>
+						<input type="radio" id="member" name="member" value="member" required>
+						<div class="circle"></div>
+						<label for="member">Member</label>
+
+						<input type="radio" id="non-member" name="member" value="non-member">
+						<div class="circle"></div>
+						<label for="non-member">Non-member</label>
+					</div>
+
+					<div class="row">
+						<label for="email">Email address</label>
+						<input type="email" id="email" name="email">
+					</div>
+				</fieldset>
+
+				<div class="row2">
+					<label for="facility">Facility</label>
+					<select name="facility">
+						<option value="badminton">Badminton</option>
+						<option value="squash">Squash</option>
+						<option value="racquetball">Racquetball</option>
+					</select>
+				</div>
+
+				<div class="row2">
+					<label for="restime">Reservation date and time</label>
+					<input type="datetime-local" id="restime" name="restime" required>
+				</div>
+
+				<div class="row2">
+					<p id="termspar">Terms and Conditions</p>
+					<input type="checkbox" id="terms" name="terms" required>
+					<div id="checkmark"></div>
+					<div id="checkbox"></div>
+					<label for="terms" id="terms">
+						I agree to the club's reservation policy.
+					</label>
+				</div>
+
+				<div class="row2">
+					<input type="submit" name="submit">
+				</div>
+			</form>
+		</section>
+	</body>
+</html>
