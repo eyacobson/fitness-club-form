@@ -11,7 +11,7 @@ header {
 }
 
 form {
-	width: 600px;
+	width: 650px;
 	margin: 0 auto;
 	border: 1px solid #b3aca7;
 	padding: 15px;
@@ -33,6 +33,12 @@ input, select {
 
 select {
 	margin-left: 135px;
+}
+
+@-moz-document url-prefix() {
+	select {
+		margin-left: 153px;
+	}
 }
 
 input[type="text"] {
